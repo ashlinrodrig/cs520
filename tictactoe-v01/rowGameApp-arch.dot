@@ -1,0 +1,22 @@
+digraph G {
+  0 [label="manipulates"];
+  1 [label="manipulates"];
+  2 [label="updates"];
+  3 [label="updates"];
+  4 [label="updates"];
+  5 [label="uses"];
+  6 [label="TERMINAL",shape=diamond];
+  7 [label="INITIAL",shape=box];
+0->3 [label="P: 1.00"];
+1->1 [label="P: 0.39"];
+1->4 [label="P: 0.61"];
+2->1 [label="P: 1.00"];
+3->3 [label="P: 0.55"];
+3->6 [label="P: 0.45"];
+4->1 [label="P: 0.31"];
+4->4 [label="P: 0.44"];
+4->5 [label="P: 0.25"];
+5->0 [label="P: 0.16"];
+5->1 [label="P: 0.84"];
+7->2 [label="P: 1.00"];
+}

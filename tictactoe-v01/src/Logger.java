@@ -16,7 +16,7 @@ public class Logger
 
     static {
 	// Allows the user to turn ON and OFF tracing
-	tracing = new Boolean(System.getProperty(LOGGER_PROPERTY_NAME, "" + Boolean.FALSE));
+	tracing = new Boolean(System.getProperty(LOGGER_PROPERTY_NAME, "" + Boolean.TRUE));
     }
 
     /**

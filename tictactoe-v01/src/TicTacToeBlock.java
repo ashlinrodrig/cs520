@@ -46,6 +46,7 @@ public class TicTacToeBlock
      * @throws IllegalArgumentException When the given value is null
      */
     public void setContents(String value) {
+        Logger.log("manipulates");
 	if (value == null) {
 	    throw new IllegalArgumentException("The value must be non-null.");
 	}
@@ -62,6 +63,7 @@ public class TicTacToeBlock
     }
 
     public void setIsLegalMove(boolean isLegalMove) {
+        Logger.log("manipulates");
 	this.isLegalMove = isLegalMove;
     }
 
@@ -73,6 +75,7 @@ public class TicTacToeBlock
      * Resets this block before starting a new game.
      */
     public void reset() {
+        Logger.log("updates");
 	this.contents = "";
 	this.isLegalMove = false;
     }

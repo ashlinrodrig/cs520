@@ -422,6 +422,7 @@ public class TicTacToeGame {
      * @param column The column that contains the block
      */
     protected void updateBlock(int row, int column) {
+		Logger.log("updates");
 	blocks[row][column].setText(blocksData[row][column].getContents());
 	blocks[row][column].setEnabled(blocksData[row][column].getIsLegalMove());
     }
@@ -430,6 +431,7 @@ public class TicTacToeGame {
      * Ends the game disallowing further player turns.
      */
     public void endGame() {
+		Logger.log("updates");
 	for(int row = 0;row<3;row++) {
 	    for(int column = 0;column<3;column++) {
 		blocks[row][column].setEnabled(false);
